@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<gs-rest-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "hello.Application",
+            "projectName": "gs-rest-service",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<gs-rest-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "ssmph.Application",
+            "projectName": "gs-rest-service",
+            "args": ""
+        }
+    ]
+}

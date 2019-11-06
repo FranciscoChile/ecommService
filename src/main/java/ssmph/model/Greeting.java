@@ -1,4 +1,4 @@
-package hello;
+package ssmph.model;
 
 public class Greeting {
 
