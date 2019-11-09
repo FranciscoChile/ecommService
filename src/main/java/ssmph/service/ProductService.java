@@ -1,5 +1,8 @@
 package ssmph.service;
 
+import java.util.List;
+import java.util.Optional;
+
 import ssmph.model.Product;
 
 /**
@@ -7,6 +10,14 @@ import ssmph.model.Product;
  */
 public interface ProductService {
 
-    public Boolean saveProduct(Product product);
+    Optional<Product> getProductById(long id);
+
+    Boolean saveProduct(Product product);
+
+    Boolean updateProduct(Product product);
+
+    Boolean deleteProduct(long id);
+
+    List<Product> findAll();
     
 }
