@@ -12,12 +12,10 @@ public interface ProductService {
 
     Optional<Product> getProductById(long id);
 
-    Boolean saveProduct(Product product);
+    void saveProduct(Product product);
 
-    Boolean updateProduct(Product product);
+    void deleteProduct(long id);
 
-    Boolean deleteProduct(long id);
-
-    List<Product> findAll();
+    List<Product> listProducts();
     
 }

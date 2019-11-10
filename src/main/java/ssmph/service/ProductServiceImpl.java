@@ -3,6 +3,8 @@ package ssmph.service;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
@@ -19,37 +21,24 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Override
-    public Boolean saveProduct(Product product) {
-        try {
-            productRepository.save(product);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+    @Transactional
+    public void saveProduct(Product product) {
+    	productRepository.save(product);
     }
 
-    public List<Product> findAll() throws DataAccessException {
+    @Transactional
+    public List<Product> listProducts() throws DataAccessException {
         return productRepository.findAll();
     }
 
-    @Override
+    @Transactional
     public Optional<Product> getProductById(long id) {
-        return productRepository.findById(String.valueOf(id)) ;
+        return productRepository.findById(id) ;
     }
 
-    @Override
-    public Boolean updateProduct(Product product) {
-        productRepository.save(product);
-
-        return true;
-
-    }
-
-    @Override
-    public Boolean deleteProduct(long id) {
-        // TODO Auto-generated method stub
-        return null;
+    @Transactional
+    public void deleteProduct(long id) {
+    	productRepository.deleteById(id);
     }
     
 }

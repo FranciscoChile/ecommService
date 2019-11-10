@@ -9,6 +9,6 @@ import ssmph.model.Product;
  * ProductRepository
  */
 @Repository
-public interface ProductRepository extends JpaRepository<Product, String> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
 
 }
