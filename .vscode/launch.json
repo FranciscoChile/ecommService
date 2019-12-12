@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Application",
+            "request": "launch",
+            "mainClass": "ssmph.Application",
+            "projectName": "ecommService"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Application<gs-rest-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
