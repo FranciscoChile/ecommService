@@ -1,9 +1,11 @@
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/controller/ProductController.java
-/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/controller/GreetingController.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/controller/StudentNotFoundException.java
-/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/model/Greeting.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/Application.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/service/ProductService.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/model/Product.java
+/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/service/ProductImagesServiceImpl.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/service/ProductServiceImpl.java
+/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/model/ProductImages.java
+/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/repository/ProductImagesRepository.java
+/Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/service/ProductImagesService.java
 /Volumes/francisco/desarrolloSW/1proyecto/ecomm/ecommService/src/main/java/ssmph/repository/ProductRepository.java

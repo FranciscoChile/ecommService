@@ -22,8 +22,8 @@ public class ProductServiceImpl implements ProductService {
     private ProductRepository productRepository;
 
     @Transactional
-    public void saveProduct(Product product) {
-    	productRepository.save(product);
+    public Product saveProduct(Product product) {
+        return productRepository.save(product);    
     }
 
     @Transactional
