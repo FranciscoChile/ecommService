@@ -1,9 +1,9 @@
-package ssmph.service;
+package com.ssmph.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import ssmph.model.Product;
+import com.ssmph.model.Product;
 
 /**
  * ProductService

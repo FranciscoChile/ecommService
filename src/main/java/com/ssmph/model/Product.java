@@ -1,9 +1,14 @@
-package ssmph.model;
+package com.ssmph.model;
+
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
  * Product
@@ -23,7 +28,11 @@ public class Product {
 	private Long stock;
 	private int active;
 
+	@JsonInclude(JsonInclude.Include.NON_NULL)
+	@Transient
+	private List<ProductImages> productImages;
 
+	
 
 	public String getSku() {
 		return sku;
@@ -87,6 +96,14 @@ public class Product {
 
 	public void setIdProduct(Long idProduct) {
 		this.idProduct = idProduct;
+	}
+
+	public List<ProductImages> getProductImages() {
+		return productImages;
+	}
+
+	public void setProductImages(List<ProductImages> productImages) {
+		this.productImages = productImages;
 	}
     
 }

@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Application",
             "request": "launch",
+            "mainClass": "com.ssmph.Application",
+            "projectName": "ecommService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Application",
+            "request": "launch",
             "mainClass": "ssmph.Application",
             "projectName": "ecommService"
         },

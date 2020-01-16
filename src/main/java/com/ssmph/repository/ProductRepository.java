@@ -1,14 +1,14 @@
-package ssmph.repository;
+package com.ssmph.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import ssmph.model.ProductImages;
+import com.ssmph.model.Product;
 
 /**
  * ProductRepository
  */
 @Repository
-public interface ProductImagesRepository extends JpaRepository<ProductImages, Long> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
 
 }

@@ -1,4 +1,4 @@
-package ssmph.model;
+package com.ssmph.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,9 +12,11 @@ public class ProductImages {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long idProductImages;
 
-    private String productImage;
+    private String imageProductName;
+    private String skuProduct;
     private Long idProduct;
 
+    
     public Long getIdProductImages() {
         return idProductImages;
     }
@@ -23,12 +25,20 @@ public class ProductImages {
         this.idProductImages = idProductImages;
     }
 
-    public String getProductImage() {
-        return productImage;
+    public String getImageProductName() {
+        return imageProductName;
     }
 
-    public void setProductImage(String productImage) {
-        this.productImage = productImage;
+    public void setImageProductName(String imageProductName) {
+        this.imageProductName = imageProductName;
+    }
+
+    public String getSkuProduct() {
+        return skuProduct;
+    }
+
+    public void setSkuProduct(String skuProduct) {
+        this.skuProduct = skuProduct;
     }
 
     public Long getIdProduct() {
@@ -38,6 +48,7 @@ public class ProductImages {
     public void setIdProduct(Long idProduct) {
         this.idProduct = idProduct;
     }
+
 
 
     
